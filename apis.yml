@@ -1,0 +1,42 @@
+aid: risc-v
+name: RISC-V International
+description: >-
+  RISC-V International advances the RISC-V open standard instruction set architecture, promoting open hardware development and reducing dependency on proprietary processor designs. It provides specifications, tools, and collaboration for building RISC-V based processors and systems.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Hardware
+  - Open Source
+  - Processor
+  - Linux Foundation
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/risc-v/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: risc-v:risc-v-api
+    name: RISC-V International API
+    description: >-
+      API for accessing RISC-V International specifications, technical resources, and open standard instruction set architecture documentation for open hardware development.
+    humanURL: https://riscv.org/technical/specifications/
+    tags:
+      - Hardware
+      - Open Source
+    properties:
+      - type: Documentation
+        url: https://riscv.org/technical/specifications/
+common:
+  - type: Documentation
+    name: RISC-V International Documentation
+    description: Official documentation for RISC-V International.
+    url: https://riscv.org/technical/specifications/
+  - type: GitHubOrg
+    name: RISC-V International GitHub
+    description: Source code and repositories for RISC-V International.
+    url: https://github.com/riscv
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
