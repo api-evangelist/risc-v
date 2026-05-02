@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "riscv": "https://riscv.org/vocab#",
+    "isa": "https://riscv.org/vocab/isa#",
+
+    "Specification": "riscv:Specification",
+    "Extension": "riscv:Extension",
+    "Profile": "riscv:Profile",
+    "Implementation": "riscv:Implementation",
+    "WorkingGroup": "riscv:WorkingGroup",
+    "Register": "isa:Register",
+    "Instruction": "isa:Instruction",
+
+    "specCategory": "riscv:specCategory",
+    "ratificationStatus": "riscv:ratificationStatus",
+    "workingGroup": "riscv:workingGroup",
+    "relatedSpecs": "riscv:relatedSpecs",
+    "conformanceLevel": "riscv:conformanceLevel",
+    "baseISA": "isa:baseISA",
+    "extensionSet": "isa:extensionSet",
+    "privilegeLevel": "isa:privilegeLevel",
+    "registerFile": "isa:registerFile",
+
+    "xLen": "isa:xLen",
+    "fLen": "isa:fLen",
+    "vLen": "isa:vLen",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "identifier": "schema:identifier",
+    "version": "schema:version",
+    "datePublished": "schema:datePublished",
+    "dateModified": "schema:dateModified",
+    "codeRepository": "schema:codeRepository",
+    "license": "schema:license",
+    "keywords": "schema:keywords",
+    "organization": "schema:Organization",
+    "governingBoard": "schema:Organization",
+    "memberOf": "schema:memberOf"
+  }
+}

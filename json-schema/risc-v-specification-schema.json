@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/api-evangelist/risc-v/blob/main/json-schema/risc-v-specification-schema.json",
+  "title": "RISC-V Specification",
+  "description": "A RISC-V International specification or technical standard",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Specification identifier (e.g., riscv-isa-manual)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Full specification title",
+      "example": "The RISC-V Instruction Set Manual, Volume I: Unprivileged ISA"
+    },
+    "category": {
+      "type": "string",
+      "description": "Specification category",
+      "enum": ["ISA Specification", "Non-ISA Specification", "Profile", "Extension", "Platform Specification"]
+    },
+    "status": {
+      "type": "string",
+      "description": "Ratification status",
+      "enum": ["Draft", "Development", "Stable", "Frozen", "Ratified"]
+    },
+    "version": {
+      "type": "string",
+      "description": "Current version string",
+      "example": "20240411"
+    },
+    "githubRepository": {
+      "type": "string",
+      "format": "uri",
+      "description": "GitHub repository URL"
+    },
+    "pdfUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "PDF download URL for the specification"
+    },
+    "htmlUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "HTML version URL"
+    },
+    "workingGroup": {
+      "type": "string",
+      "description": "RISC-V International working group responsible for the spec"
+    },
+    "relatedSpecs": {
+      "type": "array",
+      "description": "Related specification identifiers",
+      "items": {
+        "type": "string"
+      }
+    },
+    "implementations": {
+      "type": "array",
+      "description": "Known reference implementations",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "language": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": ["id", "title", "category", "status"]
+}

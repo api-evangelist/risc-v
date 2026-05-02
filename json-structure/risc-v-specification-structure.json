@@ -1,0 +1,29 @@
+{
+  "name": "RISC-V Specification",
+  "description": "Structure of a RISC-V International specification document",
+  "fields": [
+    {"name": "id", "type": "string", "description": "Specification identifier", "required": true},
+    {"name": "title", "type": "string", "description": "Full specification title", "required": true},
+    {"name": "category", "type": "enum", "values": ["ISA Specification", "Non-ISA Specification", "Profile", "Extension", "Platform Specification"], "description": "Specification category"},
+    {"name": "status", "type": "enum", "values": ["Draft", "Development", "Stable", "Frozen", "Ratified"], "description": "Ratification maturity level"},
+    {"name": "version", "type": "string", "description": "Current version string"},
+    {"name": "githubRepository", "type": "uri", "description": "GitHub repository URL"},
+    {"name": "pdfUrl", "type": "uri", "description": "PDF download URL"},
+    {"name": "htmlUrl", "type": "uri", "description": "HTML version URL"},
+    {"name": "workingGroup", "type": "string", "description": "RISC-V International working group"},
+    {"name": "relatedSpecs", "type": "array", "items": "string", "description": "Related specification IDs"},
+    {
+      "name": "implementations",
+      "type": "array",
+      "description": "Known reference implementations",
+      "items": {
+        "type": "object",
+        "fields": [
+          {"name": "name", "type": "string"},
+          {"name": "url", "type": "uri"},
+          {"name": "language", "type": "string"}
+        ]
+      }
+    }
+  ]
+}

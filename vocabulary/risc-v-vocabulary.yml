@@ -1,0 +1,133 @@
+name: RISC-V International Vocabulary
+description: >-
+  Normative vocabulary and taxonomy for the RISC-V Instruction Set Architecture
+  and ecosystem, covering ISA specifications, extensions, privilege levels,
+  registers, and open hardware development concepts.
+version: '1.0'
+created: '2026-05-02'
+modified: '2026-05-02'
+terms:
+  - term: ISA
+    definition: >-
+      Instruction Set Architecture - the abstract interface between software
+      and hardware defining the set of instructions a processor understands,
+      register file, memory model, and privilege levels.
+    synonyms: [instruction set, architecture]
+    relatedTerms: [RISC-V, base ISA, extension, profile]
+
+  - term: RISC-V
+    definition: >-
+      An open standard instruction set architecture based on Reduced Instruction
+      Set Computer (RISC) principles, developed at UC Berkeley and now governed
+      by RISC-V International. Freely available under open licenses.
+    synonyms: [riscv, RISC V]
+    relatedTerms: [ISA, RISC-V International, base ISA]
+
+  - term: Base ISA
+    definition: >-
+      The mandatory core integer instruction set that all RISC-V implementations
+      must support. Variants: RV32I (32-bit), RV64I (64-bit), RV128I (128-bit).
+    synonyms: [RV32I, RV64I, RV128I, base integer ISA]
+    relatedTerms: [ISA, extension, XLEN]
+
+  - term: Extension
+    definition: >-
+      An optional addition to the RISC-V base ISA that adds functionality such
+      as multiplication (M), atomic operations (A), floating-point (F, D, Q),
+      compressed instructions (C), or vector operations (V).
+    synonyms: [ISA extension, module]
+    relatedTerms: [base ISA, profile, ratified]
+
+  - term: Profile
+    definition: >-
+      A curated set of base ISA + extensions defined by RISC-V International
+      to represent a minimum capability level for a class of implementations,
+      enabling software portability. Examples: RVA22, RVA23.
+    synonyms: [ISA profile, platform profile]
+    relatedTerms: [extension, base ISA, conformance]
+
+  - term: XLEN
+    definition: >-
+      The bit-width of integer registers in a RISC-V implementation. XLEN=32
+      for RV32, XLEN=64 for RV64, XLEN=128 for RV128.
+    synonyms: [register width, integer width]
+    relatedTerms: [base ISA, register]
+
+  - term: Privilege Level
+    definition: >-
+      One of three execution modes in RISC-V: Machine (M-mode, highest),
+      Supervisor (S-mode, for OS kernels), and User (U-mode, for applications).
+    synonyms: [execution mode, privilege mode]
+    relatedTerms: [SBI, trap, CSR]
+
+  - term: SBI
+    definition: >-
+      Supervisor Binary Interface - the interface between RISC-V M-mode
+      firmware (such as OpenSBI) and S-mode operating systems. Defines
+      service calls for timer, IPI, RFENCE, and HSM operations.
+    synonyms: [Supervisor Binary Interface]
+    relatedTerms: [OpenSBI, M-mode, privilege level]
+
+  - term: OpenSBI
+    definition: >-
+      The official open-source reference implementation of the RISC-V SBI
+      specification, used as firmware on RISC-V Linux systems.
+    synonyms: [Open SBI, RISC-V firmware]
+    relatedTerms: [SBI, firmware, M-mode]
+
+  - term: CSR
+    definition: >-
+      Control and Status Register - special-purpose registers in RISC-V
+      that control processor behavior and report status. Accessed via
+      dedicated CSR instructions.
+    synonyms: [control register, status register]
+    relatedTerms: [privilege level, ISA, trap]
+
+  - term: Ratified
+    definition: >-
+      The final maturity stage for a RISC-V specification, indicating it
+      has been approved by RISC-V International members and is stable/frozen.
+      Precedes: Draft → Development → Stable → Frozen → Ratified.
+    synonyms: [approved, finalized, stable]
+    relatedTerms: [specification, working group]
+
+  - term: Non-ISA Specification
+    definition: >-
+      A RISC-V specification that does not add new instructions or modify
+      the ISA but defines supporting interfaces such as debug, trace,
+      platform requirements, or software ABIs.
+    synonyms: [non-ISA spec]
+    relatedTerms: [ISA, specification, extension]
+
+  - term: Spike
+    definition: >-
+      The official RISC-V ISA simulator serving as the golden reference
+      implementation. Used for architecture validation and software development
+      before hardware is available.
+    synonyms: [RISC-V simulator, ISA simulator]
+    relatedTerms: [ISA, emulator, implementation]
+
+  - term: ABI
+    definition: >-
+      Application Binary Interface - the RISC-V C calling convention
+      specification defining how function arguments are passed in registers,
+      how the stack is used, and how types are laid out in memory.
+    synonyms: [calling convention, C ABI, psABI]
+    relatedTerms: [C API, compiler, extension]
+
+  - term: Hart
+    definition: >-
+      Hardware Thread - the RISC-V term for an independent instruction
+      execution context. A processor can contain multiple harts.
+    synonyms: [hardware thread, core, execution context]
+    relatedTerms: [ISA, privilege level, IPI]
+
+categories:
+  - name: Architecture
+    terms: [ISA, RISC-V, Base ISA, Extension, Profile, XLEN, CSR, Hart]
+  - name: Privilege and Firmware
+    terms: [Privilege Level, SBI, OpenSBI]
+  - name: Standards Process
+    terms: [Ratified, Non-ISA Specification]
+  - name: Tools and Interface
+    terms: [Spike, ABI]
