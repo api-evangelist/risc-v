@@ -44,9 +44,9 @@ apis:
     properties:
       - type: Documentation
         url: https://riscv.org/technical/specifications/
-      - type: GithubRepository
+      - type: GitHubRepository
         url: https://github.com/riscv/riscv-isa-manual
-      - type: GithubRepository
+      - type: GitHubRepository
         url: https://github.com/riscv/riscv-unified-db
   - aid: risc-v:c-api-documentation
     name: RISC-V C API Documentation
@@ -61,7 +61,7 @@ apis:
       - Compiler
       - RISC-V
     properties:
-      - type: GithubRepository
+      - type: GitHubRepository
         url: https://github.com/riscv-non-isa/riscv-c-api-doc
   - aid: risc-v:non-isa-specifications
     name: RISC-V Non-ISA Specifications
@@ -78,7 +78,7 @@ apis:
       - RISC-V
       - Trace
     properties:
-      - type: GithubOrg
+      - type: GitHubOrg
         url: https://github.com/riscv-non-isa
   - aid: risc-v:spike-simulator
     name: RISC-V Spike ISA Simulator
@@ -93,7 +93,7 @@ apis:
       - Simulator
       - Testing
     properties:
-      - type: GithubRepository
+      - type: GitHubRepository
         url: https://github.com/riscv-software-src/riscv-isa-sim
   - aid: risc-v:opensbi
     name: RISC-V OpenSBI
@@ -109,18 +109,18 @@ apis:
       - RISC-V
       - SBI
     properties:
-      - type: GithubRepository
+      - type: GitHubRepository
         url: https://github.com/riscv-software-src/opensbi
 common:
   - type: Website
     url: https://riscv.org/
   - type: Documentation
     url: https://riscv.org/technical/specifications/
-  - type: GithubOrg
+  - type: GitHubOrg
     url: https://github.com/riscv
-  - type: GithubOrg
+  - type: GitHubOrg
     url: https://github.com/riscv-non-isa
-  - type: GithubOrg
+  - type: GitHubOrg
     url: https://github.com/riscv-software-src
   - type: Wiki
     url: https://wiki.riscv.org/
