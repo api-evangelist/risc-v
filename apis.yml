@@ -112,6 +112,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/riscv-software-src/opensbi
 common:
+  - type: DomainSecurity
+    url: security/risc-v-domain-security.yml
   - type: Website
     url: https://riscv.org/
   - type: Documentation
@@ -134,6 +136,8 @@ common:
     url: https://raw.githubusercontent.com/api-evangelist/risc-v/refs/heads/main/json-ld/risc-v-context.jsonld
   - type: Vocabulary
     url: https://raw.githubusercontent.com/api-evangelist/risc-v/refs/heads/main/vocabulary/risc-v-vocabulary.yml
+  - url: https://riscv.org/feed/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
