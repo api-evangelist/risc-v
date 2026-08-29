@@ -8,6 +8,18 @@ description: >-
   extensions, and a rich ecosystem of open-source tools including simulators,
   compilers, debuggers, and verification frameworks.
 type: Index
+deliveryModel:
+  model: unknown
+  license: CC-BY-4.0
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -135,6 +147,12 @@ apis:
       - type: GitHubRepository
         url: https://github.com/riscv-software-src/opensbi
 common:
+  - type: IssueTracker
+    url: https://github.com/riscv/riscv-isa-manual/issues
+  - type: Releases
+    url: https://github.com/riscv/riscv-isa-manual/releases
+  - type: ContributionGuide
+    url: https://github.com/riscv/riscv-isa-manual/blob/main/CONTRIBUTING.md
   - type: License
     name: CC-BY-4.0
     url: https://github.com/riscv/riscv-isa-manual/blob/main/LICENSE
