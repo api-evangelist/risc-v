@@ -37,13 +37,13 @@ access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/risc-v.png
 tags:
   - C API
-  - Compiler
+  - Compilers
   - Hardware
   - Instruction Set Architecture
   - Linux Foundation
   - Open Hardware
   - Open-Source
-  - Processor
+  - Processors
   - RISC-V
   - Simulator
 tags_raw:
@@ -75,6 +75,11 @@ apis:
       - Instruction Set Architecture
       - Privileged Architecture
       - RISC-V
+      - Specification
+    tags_raw:
+      - Instruction Set Architecture
+      - Privileged Architecture
+      - RISC-V
       - Specifications
     properties:
       - type: Documentation
@@ -91,6 +96,11 @@ apis:
       interfaces for C/C++ development targeting RISC-V processors.
     humanURL: https://github.com/riscv-non-isa/riscv-c-api-doc
     tags:
+      - ABI
+      - C API
+      - Compilers
+      - RISC-V
+    tags_raw:
       - ABI
       - C API
       - Compiler
