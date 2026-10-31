@@ -66,68 +66,136 @@
 
 RISC-V International advances the RISC-V open standard instruction set architecture (ISA), promoting open hardware development and reducing dependency on proprietary processor designs. The organization maintains the canonical RISC-V ISA specifications, profiles, non-ISA specifications, extensions, and a rich ecosystem of open-source tools including simulators, compilers, debuggers, and verification frameworks.
 
-## Specifications and Resources
+**Areas:** C API · Compilers · Hardware · Instruction Set Architecture · Linux Foundation · Open Hardware · Open Source · Processors · RISC-V · Simulator
 
-### RISC-V ISA Specifications
-The canonical RISC-V Instruction Set Architecture specifications including the Unprivileged ISA (RV32I/RV64I) and Privileged Architecture specification. Freely available as ratified standards.
+## RISC-V International on APIs.io
 
-- **Documentation:** https://riscv.org/technical/specifications/
-- **GitHub:** https://github.com/riscv/riscv-isa-manual
-- **Machine-readable DB:** https://github.com/riscv/riscv-unified-db
+Everything profiled for RISC-V International is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/risc-v/](https://apis.io/providers/risc-v/)** — or go straight to one of the APIs or properties below.
 
-### RISC-V C API Documentation
-Documentation of the RISC-V C API including calling conventions, ABI specifications, and compiler intrinsics.
+### APIs (5)
 
-- **GitHub:** https://github.com/riscv-non-isa/riscv-c-api-doc
+- [RISC-V ISA Specifications](https://apis.io/apis/risc-v/isa-specifications/) — The canonical RISC-V Instruction Set Architecture specifications including the Unprivileged ISA (RV32I/RV64I base integer instructions) and Privileged…
+- [RISC-V C API Documentation](https://apis.io/apis/risc-v/c-api-documentation/) — Documentation of the RISC-V C API including calling conventions, ABI specifications, compiler intrinsics, and architectural extension interfaces for C/C++…
+- [RISC-V Non-ISA Specifications](https://apis.io/apis/risc-v/non-isa-specifications/) — Supporting technical standards that do not add new instructions or modify the RISC-V ISA but help develop the ecosystem, including platform specifications,…
+- [RISC-V Spike ISA Simulator](https://apis.io/apis/risc-v/spike-simulator/) — Spike is the official RISC-V ISA Simulator and the golden reference implementation for RISC-V. It simulates the execution of RISC-V programs and is used for…
+- [RISC-V OpenSBI](https://apis.io/apis/risc-v/opensbi/) — OpenSBI is the official open-source implementation of the RISC-V Supervisor Binary Interface (SBI) specification. It provides a firmware execution…
 
-### RISC-V Non-ISA Specifications
-Supporting technical standards covering debug, trace, platform specifications, and interface standards.
+### Published properties
 
-- **GitHub Org:** https://github.com/riscv-non-isa
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### RISC-V Spike ISA Simulator
-The official RISC-V ISA Simulator and golden reference implementation.
+#### JSON Schema (1)
 
-- **GitHub:** https://github.com/riscv-software-src/riscv-isa-sim
+The data models the API reads and writes.
 
-### OpenSBI
-The official open-source RISC-V Supervisor Binary Interface implementation, serving as firmware for RISC-V Linux systems.
+- [RISC-V Specification](https://apis.io/schemas/risc-v/risc-v-specification/)
 
-- **GitHub:** https://github.com/riscv-software-src/opensbi
+#### JSON Structure (1)
 
-## JSON Schemas
+Data models expressed in JSON Structure.
 
-| Schema | Description |
-|--------|-------------|
-| [risc-v-specification-schema.json](json-schema/risc-v-specification-schema.json) | RISC-V specification document structure |
+- [Risc V Specification Structure](https://apis.io/json-structure/risc-v/risc-v-specification-structure/)
 
-## JSON Structures
+#### JSON-LD (1)
 
-| Structure | Description |
-|-----------|-------------|
-| [risc-v-specification-structure.json](json-structure/risc-v-specification-structure.json) | Field documentation for specification records |
+Linked-data contexts for the provider's vocabulary.
 
-## JSON-LD
+- [Risc V Context](https://apis.io/jsonld/risc-v/risc-v-context/)
 
-| Context | Description |
-|---------|-------------|
-| [risc-v-context.jsonld](json-ld/risc-v-context.jsonld) | Linked data context for RISC-V ISA and specification entities |
+#### Vocabulary (1)
 
-## Vocabulary
+The provider's domain terms, defined.
 
-- [risc-v-vocabulary.yml](vocabulary/risc-v-vocabulary.yml) — Normative vocabulary for the RISC-V ISA covering architecture concepts, privilege levels, and standards process
+- [RISC-V International Vocabulary](https://apis.io/vocabularies/risc-v/risc-v-vocabulary/)
 
-## GitHub Organizations
+#### Governance rules (1)
 
-| Organization | Description |
-|-------------|-------------|
-| [riscv](https://github.com/riscv) | ISA specifications and core documents |
-| [riscv-non-isa](https://github.com/riscv-non-isa) | Non-ISA specifications (debug, trace, SBI, C API) |
-| [riscv-software-src](https://github.com/riscv-software-src) | Software tools (Spike simulator, OpenSBI, tests) |
+Spectral rulesets for the provider's contracts.
 
-## Links
+- [RISC-V International — jsonschema rules](https://apis.io/rules/risc-v/risc-v-jsonschema-spectral-rules/)
 
-- **Website:** https://riscv.org/
-- **Technical Specifications:** https://riscv.org/technical/specifications/
-- **Wiki:** https://wiki.riscv.org/
-- **Member Portal:** https://members.riscv.org/
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Risc V Domain Security](https://apis.io/security/risc-v/risc-v-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Risc V Plans Pricing](https://apis.io/plans/risc-v/risc-v-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Risc V Rate Limits](https://apis.io/rate-limits/risc-v/risc-v-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Risc V Finops](https://apis.io/finops/risc-v/risc-v-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://riscv.org/)
+- [Documentation](https://riscv.org/technical/specifications/)
+- [Blog](https://riscv.org/feed/)
+- [Privacy policy](https://riscv.org/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 21.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 10.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/risc-v/](https://apis.io/providers/risc-v/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for RISC-V International: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/risc-v/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
